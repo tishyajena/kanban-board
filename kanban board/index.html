@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KANBAN BOARD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>KANBAN BOARD</h2>
+        <button id="add-task">+ Add new Task</button>
+    </header>
+    <main>
+        <div class="section" id="todo">
+            <div class="section-top">
+                <h3>To-Do</h3>
+                <p>Count</p>
+            </div>
+            <div draggable="true" class="task">
+                <h3>Heading</h3>
+                <p>Description</p>
+                <div class="buttons">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="progress">
+            <div class="section-top">
+                <h3>In Progress</h3>
+                <p>Count</p>
+            </div>
+        </div>
+        <div class="section" id="done">
+            <div class="section-top">
+                <h3>Done</h3>
+                <p>Count</p>
+            </div>
+        </div>
+    </main>
+    <div class="add-new-card">
+        <div class="center">
+            <input type="text" placeholder="Task Title">
+            <textarea placeholder="Task Description"></textarea>
+            <button id="add-new-task" class="add-task-btn">Add Task</button>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+
+</html>
